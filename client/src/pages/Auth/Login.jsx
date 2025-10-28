@@ -16,7 +16,7 @@ const Login = () => {
       const res=await axios.post(`${import.meta.env.BASE_URL}/api/v1/user/login`,{email,password})
       // console.log("login==> ", name, email, password);
       console.log(res)
-      toast.success(res.data.message);
+      toast.success("login successfully");
       navigate("/profile");
       setEmail("");
       setPassword("");
