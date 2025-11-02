@@ -1,7 +1,7 @@
 [
     {
         "id":1,
-        "name":"john DOe",
+        "name":"Mr Anish",
         "address":"Local Resident",
         "commentTile":"Greate Service",
         "commentDescription":"best service in town",
@@ -10,7 +10,7 @@
     },
     {
         "id":2,
-        "name":"Techinfoyt",
+        "name":"Mr Fardin",
         "address":"Local Resident",
         "commentTile":"Greate Service",
         "commentDescription":"best service in town",
@@ -19,7 +19,7 @@
     },
     {
         "id":3,
-        "name":"Mr X",
+        "name":"Miss Darshana",
         "address":"Local Resident",
         "commentTile":"Greate Service",
         "commentDescription":"best service in town",

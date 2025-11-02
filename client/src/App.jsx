@@ -26,8 +26,8 @@ function App() {
         <Route path='/gallery' element={<GalleryPage/>}/>
         <Route path='/register' element={<Register/>}/>
         <Route path='/login' element={<Login/>}/>
-        <Route path='/doctor' element={<AllDoctors/>}/>
-        <Route path='/doctor/:id' element={<Appointments/>}/>
+        <Route path='/doctors' element={<AllDoctors/>}/>
+        <Route path='/doctors/:id' element={<Appointments/>}/>
         <Route path='/user/profile' element={<UserProfile/>}/>
         <Route path='/user/appointments' element={<MyAppointments/>}/>
       </Routes>

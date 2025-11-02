@@ -2,7 +2,6 @@ import React, { useState } from "react";
 import "./Auth.css";
 import { NavLink, useNavigate } from "react-router";
 import toast from "react-hot-toast";
-import axios from "axios";
 
 const Login = () => {
   const [email, setEmail] = useState("");
@@ -10,12 +9,10 @@ const Login = () => {
 
   const navigate = useNavigate();
 
-  const handleSubmit = async (e) => {
+  const handleSubmit = (e) => {
     e.preventDefault();
     try {
-      const res=await axios.post(`${import.meta.env.BASE_URL}/api/v1/user/login`,{email,password})
-      // console.log("login==> ", name, email, password);
-      console.log(res)
+      console.log("login==> ", name, email, password);
       toast.success("login successfully");
       navigate("/profile");
       setEmail("");
@@ -36,7 +33,7 @@ const Login = () => {
           <div className="form-group mb-3">
             <input
               type="email"
-              placeholder="Enter your email address"
+              placeholder="enter your email address"
               value={email}
               onChange={(e) => setEmail(e.target.value)}
             />
@@ -44,7 +41,7 @@ const Login = () => {
           <div className="form-group mb-3">
             <input
               type="password"
-              placeholder="Enter your password"
+              placeholder="enter your password"
               value={password}
               onChange={(e) => setPassword(e.target.value)}
             />

@@ -11,8 +11,8 @@ const ShortIntro = () => {
             <img src={ImageHos} alt="hosimage" className="hos-image" />
           </div>
           <div className="col-md-5 info-container">
-            <h1>Darufani</h1>
-            <h6>A Super Specility Hospital</h6>
+            <h1>Healthcare Pro</h1>
+            <h6>Superlative Medical Solutions</h6>
             <p>
               Lorem ipsum dolor sit amet consectetur adipisicing elit.
               Praesentium dolorem dolorum dicta, ipsam earum repellendus unde

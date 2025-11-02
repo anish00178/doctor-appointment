@@ -2,7 +2,7 @@
     text-align: center;
     padding-top: 50px;
     font-weight: bold;
-    color: rgb(6,77,77);
+    color: rgb(6, 7, 11);
 }
 
 .facility-container{
@@ -12,7 +12,7 @@
     justify-content: center;
     padding: 20px;
     flex-wrap: wrap;
-    background-color: #9db4c0;
+    background-color: #b4d6e8;
 }
 
 .facility-container .card{
@@ -32,6 +32,6 @@
 
 .facility-container .card:hover{
     cursor: pointer;
-    background-color: rgb(7,158,158);
+    background-color: rgb(119, 87, 236);
     color: white;
 }

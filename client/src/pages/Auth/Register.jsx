@@ -14,16 +14,16 @@ const Register = () => {
   const handleSubmit = async(e) => {
     e.preventDefault();
     try {
-      // console.log("register==> ", name, email, password);
-      // toast.success("Register successfully");
-      // navigate("/login");
-      // setName("");
-      // setEmail("");
-      // setPassword("");
+      console.log("register==> ", name, email, password);
+      toast.success("Register successfully");
+      navigate("/login");
+      setName("");
+      setEmail("");
+      setPassword("");
 
-      const res = await axios.post("http://localhost:8080/api/v1/user/register",{name,email,password})
-      console.log(res)
-      toast.success("User created successfully")
+      // const res = await axios.post("http://localhost:8080/api/v1/user/register",{name,email,password})
+      // console.log(res)
+      // toast.success("User created successfully")
       navigate("/login")
 
     } catch (error) {
@@ -41,7 +41,7 @@ const Register = () => {
           <div className="form-group mb-3">
             <input
               type="text"
-              placeholder="enter your name"
+              placeholder="Enter your name"
               value={name}
               onChange={(e) => setName(e.target.value)}
             />
@@ -49,7 +49,7 @@ const Register = () => {
           <div className="form-group mb-3">
             <input
               type="email"
-              placeholder="enter your email address"
+              placeholder="Enter your email address"
               value={email}
               onChange={(e) => setEmail(e.target.value)}
             />
@@ -57,7 +57,7 @@ const Register = () => {
           <div className="form-group mb-3">
             <input
               type="password"
-              placeholder="enter your password"
+              placeholder="Enter your password"
               value={password}
               onChange={(e) => setPassword(e.target.value)}
             />
@@ -71,7 +71,7 @@ const Register = () => {
           </button>
           <p className="mt-3">
             {" "}
-            Already A user ? <NavLink to="/login">Login here!</NavLink>
+            Already a user ? <NavLink to="/login">Login here!</NavLink>
           </p>
         </div>
       </div>

@@ -3,9 +3,9 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay } from "swiper/modules";
 import "swiper/css";
 // images
-import Banner1 from "../../assets/images/banner1.png";
-import Banner2 from "../../assets/images/banner2.png";
-import Banner3 from "../../assets/images/banner3.png";
+import Banner1 from "../../assets/images/banner01.png";
+import Banner2 from "../../assets/images/banner02.png";
+import Banner3 from "../../assets/images/banner03.png";
 
 const Slider = () => {
   const images = [Banner1, Banner2, Banner3];
