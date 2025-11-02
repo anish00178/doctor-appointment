@@ -13,7 +13,7 @@ const Contact = () => {
           <i className="fa-solid fa-clock ms-3"></i> 10:00am TO 10:00pm
         </h6>
         <h6>
-          <i className="fa-solid fa-envelope ms-3"></i> help@techinfoyt.com
+          <i className="fa-solid fa-envelope ms-3"></i> healthcarepro@info.com
         </h6>
       </div>
       <ContactMessage />
