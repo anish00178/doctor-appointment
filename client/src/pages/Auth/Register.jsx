@@ -2,7 +2,6 @@ import React, { useState } from "react";
 import "./Auth.css";
 import { NavLink, useNavigate } from "react-router";
 import toast from "react-hot-toast";
-import axios from "axios";
 
 const Register = () => {
   const [name, setName] = useState("");
@@ -11,7 +10,7 @@ const Register = () => {
 
   const navigate = useNavigate();
 
-  const handleSubmit = async(e) => {
+  const handleSubmit = (e) => {
     e.preventDefault();
     try {
       console.log("register==> ", name, email, password);
@@ -20,12 +19,6 @@ const Register = () => {
       setName("");
       setEmail("");
       setPassword("");
-
-      // const res = await axios.post("http://localhost:8080/api/v1/user/register",{name,email,password})
-      // console.log(res)
-      // toast.success("User created successfully")
-      navigate("/login")
-
     } catch (error) {
       console.log(error);
       toast.error(error);
@@ -41,7 +34,7 @@ const Register = () => {
           <div className="form-group mb-3">
             <input
               type="text"
-              placeholder="Enter your name"
+              placeholder="enter your name"
               value={name}
               onChange={(e) => setName(e.target.value)}
             />
@@ -49,7 +42,7 @@ const Register = () => {
           <div className="form-group mb-3">
             <input
               type="email"
-              placeholder="Enter your email address"
+              placeholder="enter your email address"
               value={email}
               onChange={(e) => setEmail(e.target.value)}
             />
@@ -57,7 +50,7 @@ const Register = () => {
           <div className="form-group mb-3">
             <input
               type="password"
-              placeholder="Enter your password"
+              placeholder="enter your password"
               value={password}
               onChange={(e) => setPassword(e.target.value)}
             />
@@ -71,7 +64,7 @@ const Register = () => {
           </button>
           <p className="mt-3">
             {" "}
-            Already a user ? <NavLink to="/login">Login here!</NavLink>
+            Already A user ? <NavLink to="/login">Login here!</NavLink>
           </p>
         </div>
       </div>

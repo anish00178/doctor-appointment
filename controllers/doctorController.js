@@ -119,3 +119,32 @@ export const updateDoctor=async(req,res)=>{
         });
     }
 }
+
+//DELETE DOCTOR
+export const deleteDoctor=async(req,res)=>{
+    try{
+        const {id}=req.params
+        if(!id){
+                res.status(400).send({
+                success:false,
+                message:'Please update doctor details',
+            });
+        }
+
+        await doctorModel.findByIdAndDelete(id)
+        res.status(200).send({
+            success:true,
+            message:'Doctor deteted Suceessfully',
+            doctor
+
+        });
+
+    }catch(error){
+        console.log(error)
+        res.status(500).send({
+            success:false,
+            message:'Error in delete doctor Api',
+            error
+        });
+    }
+}
